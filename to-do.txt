@@ -1,0 +1,28 @@
+Ideas
+
+    1.    Social Media website
+    ⁃    Facebook or twitter with a specific theme
+    ⁃    Direct Messages
+    ⁃    Hackathons
+    ⁃    APIs weather, movies,
+    ⁃
+    2.    Chat based social media
+    3.    Music Forum,
+    ⁃    Login, create a profile
+    ⁃    Front page - expiration after 24 hours
+    ⁃    EXTRA feature - Tone.js module
+    ⁃    API - Soundcloud, Spotify,
+    ⁃    Need a name
+    4.    Backend
+    ⁃    Schema
+    ⁃    Users Table
+    ⁃    have many comments, many threads
+    ⁃    Threads Table
+    ⁃    Have the main music functionality
+    ⁃    belong_to 1 author, and many comments
+    ⁃    Upvotes - Ajax
+    ⁃    EXTRA Downvotes
+    ⁃    Comments Tables
+    ⁃    No attachements
+    ⁃    Needs user id and thread id and content
+    5.
