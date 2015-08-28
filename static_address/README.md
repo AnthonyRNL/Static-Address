@@ -31,7 +31,7 @@ a. User click on a link in the nav bar to **"Make a New Post"**
 
 #####Database Design / ERD
 
-![Pic](/db/sa ERD.png "ERD")
+![Pic](db/sa_ERD.png)
 
 
 
