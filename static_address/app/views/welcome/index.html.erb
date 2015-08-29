@@ -7,14 +7,17 @@
 <body>
 	<div data-magellan-expedition="fixed">
 		<!--search box, logo, login/logout dropbox and user info is loged in-->
-		<%= link_to "LOGIN", login_path %></br>
-		<%= link_to "LOGOUT", sessions_path, method: :delete %> 
+		<a href=<%= link_to "LOGIN", login_path %>>LOG IN</a>
+            <ul class="dropdown">
+			</ul>
   		<dl class="sub-nav">
     <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
     <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
   </dl>
 </div>
 <h1>HELLLOOOO</h1>
+		<%= link_to "LOGIN", login_path %></br>
+		<%= link_to "LOGOUT", sessions_path, method: :delete %>
 <%= link_to "Posts", posts_path %></br>
 <%= link_to "Make a New Post", new_post_path %></br>
 </body>
