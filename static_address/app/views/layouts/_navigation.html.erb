@@ -1,12 +1,45 @@
 <%# navigation styled for Zurb Foundation 5 %>
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name"><%= link_to 'Home', root_path %></li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  </ul>
-  <div class="top-bar-section">
-    <ul>
-      <%= render 'layouts/navigation_links' %>
-    </ul>
+<div class="sticky">
+	<nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false">
+  		<ul class="title-area">
+    		<li class="name"><%= link_to 'Home', root_path %></li>
+ 					<li id="login">
+ 					<li class="toggle-topbar menu-icon"><a href="#"><span>Log in</span></a></li>
+		
+     <section class="top-bar-section">
+   <!-- Right Nav Section -->
+   <ul class="right">
+     <li class="has-dropdown">
+       <a href="#">Log in</a>
+       <ul class="dropdown">
+         <li><div id="login-content">
+					<%= link_to "LOGIN", login_path %>
+            		<%= form_tag "/sessions" do %> 
+            		<fieldset id="inputs">
+            		Enter your email <%= email_field_tag :email %> 
+            		Enter your password <%= password_field_tag :password %> 
+            		</fieldset>	
+            		<fieldset id="actions">	
+            		<%= submit_tag %> <% end %>
+            		</fieldset>	
+            		</div></li>
+         
+       					</ul>
+     				</li>
+     				<li class="has-form">
+  <div class="row collapse">
+    <div class="large-8 small-9 columns">
+      <input type="text" placeholder="Find Stuff">
+    </div>
+    <div class="large-4 small-3 right columns">
+      <a href="#" class="alert button expand">Search</a>
+    </div>
   </div>
-</nav>
+</li>
+   				</ul>
+ 			</section>                    
+      
+	</nav>
+</div>
+			   
+		
