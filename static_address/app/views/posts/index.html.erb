@@ -1,6 +1,15 @@
-<h1>helooo</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
 <% @posts.each do |post| %>
 	<h1><%= link_to post.title, post %></h1>
 	<h3>By: <%= post.user.name %></h3></br>
 	<p><%= post.content %></p>
 <% end %>
+	
+</body>
+</html><h1>helooo</h1>
