@@ -1,0 +1,11 @@
+<%= form_for @post do |f| %>
+
+<!-- hidden_field_tag(:user_id, session[:user_id]) #need to check this-->
+	<%= f.label :title, 'Title' %>
+	<%= f.text_field :title, placeholder: 'Title' %> <br>
+	<%= f.label :content, 'Body Content' %>
+	<%= f.text_area :content, placeholder: 'Enter your body content here!' %>
+	<%= f.label :soundfile, 'Soundfile Attachment'%>
+	<p>This is where the soundfile attachment field should go. I'm thinking a select to choose either Soundcloud or Youtube, then unhide an input for a link</p>
+	<%= f.submit %>
+<% end %>
