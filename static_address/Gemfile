@@ -45,6 +45,8 @@ group :development, :test do
   gem 'spring'
 	
 	gem 'foundation-rails'
+	
+	gem 'soundcloud'
 
 	group :development do
 		gem 'rails_layout'
