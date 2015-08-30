@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20150829163414) do
     t.string   "content"
     t.integer  "upvote"
     t.integer  "user_id"
+		t.string	 "soundfile"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

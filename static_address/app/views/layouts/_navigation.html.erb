@@ -1,12 +1,27 @@
-<%# navigation styled for Zurb Foundation 5 %>
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name"><%= link_to 'Home', root_path %></li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  </ul>
-  <div class="top-bar-section">
-    <ul>
-      <%= render 'layouts/navigation_links' %>
-    </ul>
-  </div>
-</nav>
+<div class="sticky">
+
+	<!--    NAVIGATION BAR   -->
+	<nav class="top-bar">
+		<ul class="title-area">
+			<li class="name">
+				<h1><a href="/">static-address</a></h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		</ul>
+		<section class="top-bar-section">
+			<!-- Left Nav Section -->
+			<ul class="left">
+				<li><a href="#">This Week</a></li>
+				<li class="divider"></li>
+				<li class="has-form"><a class="button alert" href="/tsrh/new">Submit New!</a></li>
+			</ul>
+
+			<!-- Right Nav Section -->
+			<ul class="right">
+				<li><a href="#">User Info(2)</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</section>
+	</nav>
+</div>
