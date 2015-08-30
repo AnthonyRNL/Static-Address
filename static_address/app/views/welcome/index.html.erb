@@ -1,5 +1,30 @@
-<h1>HELLLOOOO</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="row">
+		<div class="small-6 large-2 columns"></div>
+			<h1>Static-Address(logo)</h1>
+			<h5>Be heard over the static...</h5>
+		</div>
+
+	</div>
+
+	<%= link_to "Join the party", login_path %></br></br></br>
+
+	<%@posts.each do |b|%>
+	<%end%>
+
+
+
 <%= link_to "Posts", posts_path %></br>
 <%= link_to "Make a New Post", new_post_path %></br>
 <%= link_to "LOGIN", login_path %></br>
 <%= link_to "LOGOUT", sessions_path, method: :delete %> 
+	
+</body>
+</html>
+
