@@ -32,15 +32,18 @@
 <script>
 //THIS WAS TAKEN FROM THE SOUNDCLOUD API SITE.
 // initialize client with app credentials
-SC.initialize({
-  client_id: 'ac24d5a198b560ccacf99079a16767e7',
-  redirect_uri: 'http://localhost:3000/login'
-});
-
-// initiate auth popup
-SC.connect(function() {
-  SC.get('/me', function(me) {
-    alert('Hello, ' + me.username);
+var soundcloudFunc = function soundcloudFunc(){
+  SC.initialize({
+    client_id: 'ac24d5a198b560ccacf99079a16767e7',
+    redirect_uri: 'http://localhost:3000/'
   });
-});
+
+  // initiate auth popup
+  SC.connect(function() {
+    SC.get('/me', function(me) {
+      alert('Hello, ' + me.username);
+    });
+  });
+}
 </script>
+      <input type="image" src="http://connect.soundcloud.com/2/btn-connect-sc-m.png" alt="Submit" onclick="soundcloudFunc()">
