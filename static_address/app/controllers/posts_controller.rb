@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
   layout 'application'
 	#before_action :logged_in_user, only: [:create, :destroy, :update]
-	before_action :authenticate
+	#before_action :authenticate
 	
 	def index
     @posts = Post.all
