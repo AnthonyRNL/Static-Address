@@ -1,17 +1,17 @@
 class PostsController < ApplicationController
 
   layout 'application'
-	#before_action :logged_in_user, only: [:create, :destroy, :update]
+	before_action :logged_in_user, only: [:create, :destroy, :update]
 	#before_action :authenticate
-	
+
 	def index
     @posts = Post.all
 	end
-	
+
 	def show
 		@post = Post.find(params[:id])
 	end
-	
+
 	def create
 		current_user = current_user || User.find(1)
 		puts current_user
@@ -23,11 +23,11 @@ class PostsController < ApplicationController
 	def new
 		@post = Post.new
 	end
-	
+
 	private
-	
+
 	def post_params
 		params.require(:post).permit(:title, :content, :soundfile, :user_id, :upvote)
 	end
-	
+
 end
