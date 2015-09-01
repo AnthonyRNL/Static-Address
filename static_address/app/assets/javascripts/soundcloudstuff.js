@@ -11,7 +11,7 @@ function initialize() {
 
 		var urlWanted = url || 'https://soundcloud.com/underoath/writing-on-the-walls';
 		SC.oEmbed(urlWanted, {
-			auto_play: true,
+			auto_play: false,
 			maxheight: 200,
 			iframe: true
 		}, document.getElementById('target'));

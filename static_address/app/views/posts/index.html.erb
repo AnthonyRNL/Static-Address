@@ -1,6 +1,22 @@
-<h1>helooo</h1>
-<% @posts.each do |post| %>
-	<h1><%= link_to post.title, post %></h1>
-<h3>By: <%= post.user.name %></h3></br>
-	<p><%= post.content %></p>
-<% end %>
+<div id="posts-wrapper">
+	<h1>static-address</h1>
+	<h3>Be heard through the static...</h3>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<% @posts.each do |post| %>
+				<div class="post">
+					<h4><%= link_to post.title, post %></h4>
+					<p>By: <%= link_to post.user.name, user_path(post.user.id) %></p>
+					</br>
+					<p><%= post.content %></p>
+				</div>
+					<hr>
+			<% end %>
+		</div>
+</div> <!-- closes container	-->
+
+<footer>
+	<p class="disclaimer">we do not own any of the rights to the music on our website</p>
+	<p class="disclaimer">&copy; Raina Koren, Anthony Lui, Steve Edelmann, Matt Fewer</p>
+</footer>

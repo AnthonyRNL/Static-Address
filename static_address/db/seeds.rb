@@ -11,10 +11,10 @@ User.create(name: "Anthony", username: "MasterAnthony", email: "What@What.com", 
 User.create(name: "Raina", 	 username: "MasterRaina", email: "What@What.com", avatar: "http://cdn.1xrun.com/images/uploads/3_immer.jpg")
 User.create(name: "Steven",  username: "MasterSteven", email: "What@What.com", avatar: "http://cdn.1xrun.com/images/uploads/3_immer.jpg")
 
-Post.create(title: "Haahahah", user_id: 1, content: "This is Raina's post",   upvote: 0, soundfile: "https://www.youtube.com/watch?v=fnj-eo27hD8")
-Post.create(title: "Das mah shiit", user_id: 1, content: "This is Anthony's post", upvote: 0, soundfile: "https://soundcloud.com/majorlazer/kranium-ft-ty-dolla-ign-nobody-has-to-know-major-lazer-kickraux-remix")
-Post.create(title: "Listen i da best", user_id: 1, content: "This is Matthew's post", upvote: 0, soundfile: "https://soundcloud.com/silasisdead/silasisdead-remix")
-Post.create(title: "i so good at musik", user_id: 1, content: "This is Steven's post",  upvote: 0, soundfile: "https://www.youtube.com/watch?v=x_cmZyYHMTk")
+Post.create(title: "The Kinky Fuzz EP", user_id: 1, content: "This is Matt Fewer here. Seeding some new data for my new website. Checkout this original instrumental I recorded with the shake",   upvote: 0, soundfile: "https://soundcloud.com/matt-fewer/kinky-fuzz/s-ZdAab")
+Post.create(title: "Das mah shiit", user_id: 2, content: "Just can't get this song out of my head!! Needed to post it! Sorry I know this forum is for original music only but had to share haha :)", upvote: 0, soundfile: "https://soundcloud.com/riserecords/sets/silverstein-i-am-alive-in")
+Post.create(title: "New Track: Already Gone", user_id: 1, content: "Here's another fresh new track off my CD, The Kinky Fuzz Ep", upvote: 0, soundfile: "https://soundcloud.com/matt-fewer/already-gone/s-IbaZb")
+Post.create(title: "One More: Paralyzed", user_id: 1, content: "OK OK, I'm going a little crazy with the posts. But I had to just show you guys the last but not least song on the album.",  upvote: 0, soundfile: "https://soundcloud.com/matt-fewer/paralyzed/s-JcQ05")
 
 Comment.create(post_id: 4, user_id: 3, content: "NOT Cool stuff")
 Comment.create(post_id: 3, user_id: 2, content: "I HATE THIS SONG")
