@@ -11,7 +11,7 @@
 				<p><%= post.content %></p>
 			</div>
 			<div class="small-2 columns">
-				<p>By: <%= link_to post.user.name, user_path(post.user.id) %></p>
+				<p>By: <%= link_to post.user.username, user_path(post.user.id) %></p>
 				<img src="<%= post.user.avatar %>" alt="user avatar">
 			</div>
 	</div>

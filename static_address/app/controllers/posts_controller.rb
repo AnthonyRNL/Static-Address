@@ -15,14 +15,16 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
-		@user = User.find(params[:id])
+		@user = User.find(@post.user_id)
 	end
 
 	def create
-		current_user = current_user || User.find(1)
-		puts current_user
+		user = current_user || User.find(1)
+		puts "1234"
+		puts user
+		puts user[:username]
 		#fills in the user_id portion of the post_params which is needed.
-		@post = current_user.posts.create(post_params)
+		@post = user.posts.create(post_params)
 		redirect_to '/posts/'+@post[:id].to_s
 	end
 
