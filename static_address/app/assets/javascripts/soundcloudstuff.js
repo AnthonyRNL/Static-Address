@@ -3,8 +3,16 @@ SC.initialize({
 	})
 
 window.onload = function(){
-	var urlWanted = url || 'https://soundcloud.com/underoath/writing-on-the-walls';
-	SC.oEmbed(urlWanted, {auto_play: true, maxheight: 200, iframe: true, color: 'FFFFFF'}, document.getElementById('target'));
+	if (mediaNum === "1"){
+		var urlWanted = url || 'https://soundcloud.com/underoath/writing-on-the-walls';
+		SC.oEmbed(urlWanted, {auto_play: true, maxheight: 200, iframe: true, color: 'FFFFFF'}, document.getElementById('target'));
+	} else if (mediaNum === "2"){
+		var urlWanted = url || 'https://youtu.be/bg1sT4ILG0w'
+		$target = document.getElementById('target')
+		embedurl = url.toString().replace('watch?v=', 'embed/')
+		$('<iframe width="440" height="200" src="'+embedurl+'" frameborder="0" allowfullscreen></iframe>').appendTo(target)
+		console.log($target)
+	}
 }
 
 window.setTimeout(function(){

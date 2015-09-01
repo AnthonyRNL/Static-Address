@@ -2,9 +2,16 @@
 	<div class="row">
 		<div id="title-row-show" class="small-6 small-centered columns">
 			<h1><%= @post.title %></h1>
+			<h3><%= @post.artist %></h3>
+			<h5><%= @post.genre %></h5>
 		</div>
 	</div>
 
+	<div class="row">
+		<div id="content-row-show" class="small-12 columns">
+			<p><%= @post.content %></p>
+		</div>
+	</div>
 
 	<div id="media-row" class="row">
 		<div class="small-12 medium-6 columns">
@@ -15,17 +22,10 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="small-12 columns">
-			<ul>
-				<li><a href="#" class="genre">dubstep</a></li>
-				<li><a href="#" class="genre">electronic</a></li>
-				<li><a href="#" class="genre">punk</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
 
+</div>
 <script type="application/javascript">
-	var url = "<%= @post.soundfile %>";
+	var mediaNum = "<%= @post.media_selection %>";
+	console.log(mediaNum)
+	var url = "<%= raw(@post.soundfile) %>";
 </script>

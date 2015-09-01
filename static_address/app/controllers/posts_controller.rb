@@ -27,7 +27,7 @@ class PostsController < ApplicationController
 	private
 	
 	def post_params
-		params.require(:post).permit(:title, :content, :soundfile, :user_id, :upvote)
+		params.require(:post).permit(:title, :content, :artist, :genre, :media_selection, :soundfile, :user_id, :upvote)
 	end
 	
 end
