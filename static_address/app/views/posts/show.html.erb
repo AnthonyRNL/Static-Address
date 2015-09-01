@@ -5,23 +5,24 @@
 		</div>
 	</div>
 
-
 	<div id="media-row" class="row">
 		<div class="small-12 medium-6 columns">
 			<h3>User Info</h3>
 		</div>
-		<div style="border-left:1px solid #000;height:200px" class="small-12 medium-6 columns">
+		<div id="media-player-div" class="small-12 medium-6 columns">
 			<div id="target"></div>
 		</div>
 	</div>
 
 	<div class="row">
+		<div class="small-6 small-centered columns">
+			<h2>Body Title</h2>
+		</div>
+		
 		<div class="small-12 columns">
-			<ul>
-				<li><a href="#" class="genre">dubstep</a></li>
-				<li><a href="#" class="genre">electronic</a></li>
-				<li><a href="#" class="genre">punk</a></li>
-			</ul>
+			<section>
+				<p><%= @post.content %></p>
+			</section>
 		</div>
 	</div>
 </div>

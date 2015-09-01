@@ -1,11 +1,17 @@
 class PostsController < ApplicationController
 
   layout 'application'
-	#before_action :logged_in_user, only: [:create, :destroy, :update]
+#	before_action :logged_in_user, only: [:create]
 	#before_action :authenticate
 	
 	def index
-    @posts = Post.all
+		
+		if params[:user_id]
+			@posts = Post.where({user_id: params[:user_id]})
+		else
+			@posts = Post.all
+		end
+
 	end
 	
 	def show

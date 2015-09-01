@@ -18,6 +18,24 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+h1,h2,h3,h4,h5 {
+	text-align: center;
+}
+
+#posts-wrapper {
+	border: 1px solid black;
+	margin-bottom: 15px;
+	background-color: white;
+	border: 70px
+	
+}
+.post {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	margin: 0 0 5px 0;
+	padding: 10px;
+	background-color: #66314B
+}
 #media-row {
 	width: 100%;
 	max-height: 200px;
@@ -25,4 +43,15 @@ body {
 
 .top-bar section {
 	margin: 0
+}
+
+#media-player-div{
+	border-left: 1px solid #000;
+	height:200px
+}
+
+.disclaimer {
+	font-size: 9px;
+	border-top: 15px;
+	text-align: center;
 }
