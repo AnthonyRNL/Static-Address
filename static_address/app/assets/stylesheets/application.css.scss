@@ -15,3 +15,16 @@
  *= require foundation_and_overrides
 
  */
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+#media-row {
+	width: 100%;
+	max-height: 200px;
+}
+
+.top-bar section {
+	margin: 0
+}

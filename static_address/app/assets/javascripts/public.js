@@ -10,16 +10,4 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require foundation
 //= require soundcloudstuff
-//= require_tree .
-<<<<<<< HEAD
-$(function() {
-  $(document).foundation();
-});
-=======
-
-$(function(){ $(document).foundation(); });
->>>>>>> 34b26eb4b5dee3d3351545aae5565c78e1fad5a5
