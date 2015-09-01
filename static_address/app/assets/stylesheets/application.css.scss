@@ -16,6 +16,9 @@
 
 body {
 	font-family: 'Quicksand', sans-serif;
+	a {
+		color: #73653D !important
+	}
 }
 
 h1,h2,h3,h4,h5 {
@@ -34,7 +37,7 @@ h1,h2,h3,h4,h5 {
 	border-bottom: 1px solid gray;
 	margin: 0 0 5px 0;
 	padding: 10px;
-	background-color: #66314B
+	background-color: lighten(#66314B, 12%)
 }
 #media-row {
 	width: 100%;
