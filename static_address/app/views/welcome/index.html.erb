@@ -1,5 +1,26 @@
-<h1>HELLLOOOO</h1>
-<%= link_to "Posts", posts_path %></br>
-<%= link_to "Make a New Post", new_post_path %></br>
-<%= link_to "LOGIN", login_path %></br>
-<%= link_to "LOGOUT", sessions_path, method: :delete %> 
+<html>
+
+<head>
+  <title>Welcome to Static-Address</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+  <div id="welcome_index_title">
+    <h1>Static Address</h1>
+    <h6>Be Heard Over the Static</h6>
+  </div>
+  <h3 id="current_ten">CURRENT TOP TEN</h3>
+  <ul>
+
+  </ul>
+  <%= link_to "Posts", posts_path %></br>
+  <%= link_to "Make a New Post", new_post_path %></br>
+  <%= link_to "LOGIN", login_path %></br>
+  <%= link_to "LOGOUT", sessions_path, method: :delete %>
+
+
+</body>
+
+</html>

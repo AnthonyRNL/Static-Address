@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 20150829163414) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.string   "content"
+    t.string   "soundfile"
     t.integer  "upvote"
     t.integer  "user_id"
-		t.string	 "soundfile"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
