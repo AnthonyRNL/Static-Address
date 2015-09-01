@@ -20,7 +20,13 @@
 
 			<!-- Right Nav Section -->
 			<ul class="right">
-				<li><a href="#">User Info(2)</a></li>
+				<li><a href="#"><%if session[:user_id] %>
+        <%=User.find(session[:user_id]).username %>
+        <% else%>
+        <%= "signin"%>
+        <%end%>
+
+      </a></li>
 				<li class="divider"></li>
 				<li><a href="#">Logout</a></li>
 			</ul>

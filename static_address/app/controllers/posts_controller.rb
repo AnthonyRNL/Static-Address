@@ -1,9 +1,13 @@
 class PostsController < ApplicationController
 
   layout 'application'
+<<<<<<< HEAD
 #	before_action :logged_in_user, only: [:create]
+=======
+	before_action :logged_in_user, only: [:create, :destroy, :update]
+>>>>>>> test2
 	#before_action :authenticate
-	
+
 	def index
 		
 		if params[:user_id]
@@ -13,11 +17,11 @@ class PostsController < ApplicationController
 		end
 
 	end
-	
+
 	def show
 		@post = Post.find(params[:id])
 	end
-	
+
 	def create
 		current_user = current_user || User.find(1)
 		puts current_user
@@ -29,11 +33,11 @@ class PostsController < ApplicationController
 	def new
 		@post = Post.new
 	end
-	
+
 	private
-	
+
 	def post_params
 		params.require(:post).permit(:title, :content, :soundfile, :user_id, :upvote)
 	end
-	
+
 end
