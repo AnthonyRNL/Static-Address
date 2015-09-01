@@ -1,7 +1,7 @@
 <div id="posts-wrapper">
 	<h1>static-address</h1>
 	<h3>Be heard through the static...</h3>
-	
+
 	<div id="posts-inner-wrapper">
 		<% @posts.each do |post| %>
 		<div id="posts-row" class="row post">
@@ -13,7 +13,7 @@
 			<div class="small-2 columns">
 				<p>By: <%= link_to post.user.name, user_path(post.user.id) %></p>
 				<img src="<%= post.user.avatar %>" alt="user avatar">
-			</div>	
+			</div>
 	</div>
 				<% end %>
 
@@ -21,10 +21,5 @@
 
 <footer>
 	<p class="disclaimer">we do not own any of the rights to the music on our website</p>
-<<<<<<< HEAD
-	<p class="disclaimer">&copy; Raina Koren, Anthony Lui, Steve Edelmann, Matt Fewer</p>
-</footer>
-=======
 	<p class="disclaimer">&copy; Raina Koren | Anthony Lui | Steve Edelmann | Matt Fewer</p>
 </footer>
->>>>>>> 6762aa7da0fb3d0b179fa8f65327c1cdc6120a01
