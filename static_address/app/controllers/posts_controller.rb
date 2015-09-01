@@ -1,19 +1,19 @@
+
 class PostsController < ApplicationController
   layout 'application'
 	#before_action :logged_in_user, only: [:create, :destroy, :update]
 	
 	
 	def index
-    @posts = Post.all
+    	@posts = Post.all
 	end
 	
 	def show
-		@post = Post.find(params[:id])
+		@post = Post.find(params[:id])	
 	end
 	
 	def create
 		current_user = current_user || User.find(1)
-		puts current_user
 		#fills in the user_id portion of the post_params which is needed.
 		@post = current_user.posts.create(post_params)
 		redirect_to '/posts/'+@post[:id].to_s
@@ -26,7 +26,7 @@ class PostsController < ApplicationController
 	private
 	
 	def post_params
-		params.require(:post).permit(:title, :content, :soundfile)
+		params.require(:post).permit(:title, :content, :soundfile, :artist, :genre, :media_selection)
 	end
 
 end

@@ -23,15 +23,4 @@ window.onload = function(){
 	SC.oEmbed(urlWanted, {auto_play: true, maxheight: 200, iframe: true, color: 'FFFFFF'}, document.getElementById('target'));
 	
 	$('target').scPlayer();
-	
-	
-	//	var menuLinks = document.getElementsByClassName('genre')
-//	var i = 0
-//	for(i; i < menuLinks.length; i++){
-//		var menuLink = menuLinks[i]
-//		menuLink.onclick = function(e) {
-//			e.preventDefault();
-//			playSomeSound(menuLink.innerHTML)
-//		}
-//	}
 }
