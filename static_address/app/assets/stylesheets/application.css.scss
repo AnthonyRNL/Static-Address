@@ -16,43 +16,61 @@
 
 body {
 	font-family: 'Quicksand', sans-serif;
-	a {
-		color: #73653D !important
-	}
 }
-
 h1,h2,h3,h4,h5 {
 	text-align: center;
 }
-
+.post-header-posts {
+	text-align: left;
+}
 #posts-wrapper {
 	border: 1px solid black;
 	margin-bottom: 15px;
 	background-color: white;
-	border: 70px
-	
+	border: 70px;
 }
 .post {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
-	margin: 0 0 5px 0;
+	margin: auto;
 	padding: 10px;
-	background-color: lighten(#66314B, 12%)
+	a {
+		color: #403239 !important
+	}
+}
+
+//BE CAREFUL!!!
+#posts-inner-wrapper {
+	background-color: lightgrey;
+	margin: 40px;
+	border: 1px solid black;
+	box-shadow: 40px;
+}
+//BE CAREFUL!!!
+#post-inner-wrapper {
+	background-color: lightgrey;
+	margin: 20px;
+	border: 1px solid black;
+	box-shadow: 40px;
+	padding: 20px;
+}
+#posts-row{
+	margin: inherit;
 }
 #media-row {
 	width: 100%;
 	max-height: 200px;
 }
-
 .top-bar section {
 	margin: 0
 }
-
 #media-player-div{
 	border-left: 1px solid #000;
 	height:200px
 }
-
+#show-post-title{
+	display: inline
+}
 .disclaimer {
 	font-size: 9px;
 	border-top: 15px;

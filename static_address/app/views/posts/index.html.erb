@@ -1,19 +1,22 @@
 <div id="posts-wrapper">
 	<h1>static-address</h1>
 	<h3>Be heard through the static...</h3>
+	
+	<div id="posts-inner-wrapper">
+		<% @posts.each do |post| %>
+		<div id="posts-row" class="row post">
+			<div class="small-10 columns">
+				<h4 class="post-header-posts"><%= link_to post.title, post %></h4>
+				</br>
+				<p><%= post.content %></p>
+			</div>
+			<div class="small-2 columns">
+				<p>By: <%= link_to post.user.name, user_path(post.user.id) %></p>
+				<img src="<%= post.user.avatar %>" alt="user avatar">
+			</div>	
+	</div>
+				<% end %>
 
-	<div class="row">
-		<div class="small-12 columns">
-			<% @posts.each do |post| %>
-				<div class="post">
-					<h4><%= link_to post.title, post %></h4>
-					<p>By: <%= link_to post.user.name, user_path(post.user.id) %></p>
-					</br>
-					<p><%= post.content %></p>
-				</div>
-					<hr>
-			<% end %>
-		</div>
 </div> <!-- closes container	-->
 
 <footer>
