@@ -1,15 +1,11 @@
 class PostsController < ApplicationController
 
   layout 'application'
-<<<<<<< HEAD
-#	before_action :logged_in_user, only: [:create]
-=======
 	before_action :logged_in_user, only: [:create, :destroy, :update]
->>>>>>> test2
 	#before_action :authenticate
 
 	def index
-		
+
 		if params[:user_id]
 			@posts = Post.where({user_id: params[:user_id]})
 		else
