@@ -1,15 +1,27 @@
-#README - Static_Address
+#README - Static-Address
 
 ###Project Info
-Short Description: 
 
-**Members:** Raina Koren | Matt Fewer | Anthony Lui | Steven Edelmann
+Static-Address is a exciting new music forum. The website features customized integration with Soundcloud and Youtube media players. It's easy to create a new post too! All you need to do is create an account, fill out a basic form, supply a link to the Soundcloud or Youtube file you want to attach to your post, and voilá! You have a new post with your song attached. Users can comment and (hopefully) upvote on your post to drive its popularity.
+
+###Members 
+Raina Koren | Matt Fewer | Anthony Lui | Steven Edelmann
+
+###Technologies Used
+*	Ruby on Rails
+*	Lots of Javascript
+*	jQuery
+*	Postgres
+*	Foundation
+*	Soundcloud SDK
+*	Soundcloud Media Player
+*	Youtube Media Player
+*	**Not** Turbolinks
 
 [Link to Trello]('https://trello.com/b/VY6ABgmU/static-address' "Click Here!")  
 
 
-##Articfacts
-#####User Stories
+###User Stories
 1. Home Page 
 * User can see SA logo, a short description of what we do, a navigation bar, followed by the list of threads. On the threads, users can see the title , amount of comments, upvotes, _some_ content. If the user is not signed in, they will not be able to post, comment, or upvote.
 * New User Sign-Up
@@ -26,8 +38,12 @@ a. User click on a link in the nav bar to **"Make a New Post"**
 * User clicks submit, and they are brought to their brand new post which an attached soundfile.
 
 #####Front-End Wireframe
+######Welcome Page
 
-#####Routes
+![welcome page](../wireframes/WelcomePage.png)
+
+######Show Page
+![show page](../wireframes/ShowPage.png)
 
 #####Database Design / ERD
 
