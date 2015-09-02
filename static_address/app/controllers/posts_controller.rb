@@ -29,6 +29,13 @@ class PostsController < ApplicationController
 		@post = Post.new
 	end
 
+  def upvote
+    @post = Post.find(params[:id])
+    @post.upvote = @post.upvote + 1
+    @post.save
+    redirect_to posts_path
+  end
+
 	private
 
 	def post_params

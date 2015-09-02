@@ -6,7 +6,7 @@
 		<% @posts.each do |post| %>
 		<div id="posts-row" class="row post">
 			<div id="upvote-wrapper" class="small-1 columns">
-				<p>text</p>
+				<p><%= link_to "up", upvote_post_path(post)%></p>
 				<p class="upvote-number"><%= post.upvote %></p>
 			</div>
 			<div class="small-9 columns">
