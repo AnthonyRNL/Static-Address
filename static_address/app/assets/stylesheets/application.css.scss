@@ -41,10 +41,6 @@ h1,h2,h3,h4,h5 {
 	max-height: 200px;
 }
 
-.top-bar section {
-	margin: 0
-}
-
 #media-player-div{
 	border-left: 1px solid #000;
 	height:200px
@@ -54,4 +50,8 @@ h1,h2,h3,h4,h5 {
 	font-size: 9px;
 	border-top: 15px;
 	text-align: center;
+}
+
+.profpic {
+	width: 100px;
 }
