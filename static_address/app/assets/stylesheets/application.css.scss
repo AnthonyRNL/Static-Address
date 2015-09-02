@@ -29,6 +29,12 @@ h1,h2,h3,h4,h5 {
 	background-color: white;
 	border: 70px;
 }
+.login-wrapper {
+	border: 1px solid black;
+	margin-bottom: 15px;
+	background-color: white;
+	border: 70px;
+}
 .post {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
@@ -75,4 +81,7 @@ h1,h2,h3,h4,h5 {
 	font-size: 9px;
 	border-top: 15px;
 	text-align: center;
+}
+.hidden {
+	display: none;
 }
