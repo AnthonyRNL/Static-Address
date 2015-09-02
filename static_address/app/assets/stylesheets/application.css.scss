@@ -44,16 +44,16 @@ h1,h2,h3,h4,h5 {
 }
 #media-row {
 	width: 100%;
-	max-height: 200px;
-}
-
-.top-bar section {
-	margin: 0
+	max-height: 500px;
 }
 
 #media-player-div{
 	border-left: 1px solid #000;
-	height:200px
+	min-height:200px
+}
+#media-player {
+	height: 100% !important;
+	text-align: center
 }
 
 .disclaimer {
@@ -61,6 +61,12 @@ h1,h2,h3,h4,h5 {
 	border-top: 15px;
 	text-align: center;
 }
+
 .hidden {
 	display: none;
 }
+
+.profpic {
+	width: 100px;
+}
+
