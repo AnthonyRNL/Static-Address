@@ -1,7 +1,7 @@
 <div id="posts-wrapper">
 	<h1>static-address</h1>
 	<h3>Be heard through the static...</h3>
-	
+
 	<div id="posts-inner-wrapper">
 		<% @posts.each do |post| %>
 		<div id="posts-row" class="row post">
@@ -17,7 +17,7 @@
 			<div class="small-2 columns">
 				<p>By: <%= link_to post.user.username, user_path(post.user.id) %></p>
 				<img src="<%= post.user.avatar %>" alt="user avatar">
-			</div>	
+			</div>
 	</div>
 				<% end %>
 
