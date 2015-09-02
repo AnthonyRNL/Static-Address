@@ -20,9 +20,6 @@ class PostsController < ApplicationController
 
 	def create
 		user = current_user || User.find(1)
-		puts "1234"
-		puts user
-		puts user[:username]
 		#fills in the user_id portion of the post_params which is needed.
 		@post = user.posts.create(post_params)
 		redirect_to '/posts/'+@post[:id].to_s
@@ -35,7 +32,7 @@ class PostsController < ApplicationController
 	private
 
 	def post_params
-		params.require(:post).permit(:title, :content, :soundfile, :user_id, :upvote)
+		params.require(:post).permit(:title, :content, :youtubefile, :soundcloudfile, :user_id, :upvote, :artist, :genre, :media_selection)
 	end
 
 end

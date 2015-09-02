@@ -29,6 +29,12 @@ h1,h2,h3,h4,h5 {
 	border: 70px
 
 }
+.login-wrapper {
+	border: 1px solid black;
+	margin-bottom: 15px;
+	background-color: white;
+	border: 70px;
+}
 .post {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
@@ -38,12 +44,16 @@ h1,h2,h3,h4,h5 {
 }
 #media-row {
 	width: 100%;
-	max-height: 200px;
+	max-height: 500px;
 }
 
 #media-player-div{
 	border-left: 1px solid #000;
-	height:200px
+	min-height:200px
+}
+#media-player {
+	height: 100% !important;
+	text-align: center
 }
 
 .disclaimer {
@@ -52,6 +62,13 @@ h1,h2,h3,h4,h5 {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .profpic {
 	width: 100px;
 }
+=======
+.hidden {
+	display: none;
+}
+
+>>>>>>> e80d79ed303765a505b552a1d4116f846b3d7c79
