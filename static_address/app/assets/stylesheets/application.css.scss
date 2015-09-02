@@ -47,9 +47,9 @@ h1,h2,h3,h4,h5 {
 	max-height: 500px;
 }
 
-.top-bar section {
-	margin: 0
-}
+//.top-bar section {
+//	margin: 0
+//}
 
 #media-player-div{
 	border-left: 1px solid #000;
@@ -59,14 +59,33 @@ h1,h2,h3,h4,h5 {
 	height: 100% !important;
 	text-align: center
 }
-
 .disclaimer {
 	font-size: 9px;
 	border-top: 15px;
 	text-align: center;
 }
-
 .hidden {
 	display: none;
 }
 
+//user show page
+.inner-container-edit {
+	background-color: red;
+	margin: auto;
+}
+.inner-container-edit h4 {
+	display: inline;
+}
+#edit-container {
+	background-color: red;
+	margin: 15px 5px 15px 5px;
+}
+#user-avatar-img {
+	max-width: 200px;
+}
+.edit-bold {
+	font-weight: 600;
+}
+.profpic {
+	width: 100px;
+}
